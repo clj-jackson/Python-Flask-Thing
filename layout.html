@@ -8,19 +8,22 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+        <style>
+            body {background-color: lightgray}
+            body {color: black}
+        </style>
 
         {% if title %}
-            <title>Website Name - {{ title }}</title>
+            <title>WebFlask - {{ title }}</title>
         {% else %}
-            <title>Website Name</title>
+            <title>WebFlask</title>
         {% endif %}
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <a class="navbar-brand" href="#" data-abc="true">Flask Project</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black"> <a class="navbar-brand" href="/" data-abc="true">Flask Project</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"> <a class="nav-link" href="/" data-abc="true">Home <span class="sr-only">(current)</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="/" data-abc="true">Home</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="/contact" data-abc="true">Contact</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="/about" data-abc="true">About</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="/opentabs" data-abc="true">Tabs</a></li>
@@ -34,15 +37,6 @@
             </div>
             <div class="col-md-4">
               <div class="content-section">
-                <h3>Pages that will open</h3>
-                <p class='text-muted'>Here are the pages that will open with the click of the button.
-                  <ul class="list-group">
-                    <li class="list-group-item list-group-item-light">Latest Posts</li>
-                    <li class="list-group-item list-group-item-light">Announcements</li>
-                    <li class="list-group-item list-group-item-light">Calendars</li>
-                    <li class="list-group-item list-group-item-light">etc</li>
-                  </ul>
-                </p>
               </div>
             </div>
           </div>
